@@ -1,0 +1,121 @@
+Nodejs React Mongodb Login y CRUD (Aplicación FullStack)
+https://www.youtube.com/watch?v=NmkY4JgS21A
+
+paquetes instalados
+Dependencias
+
+bcryptjs: Para encriptar contraseñas.
+cookie-parser: Middleware para manejar cookies.
+express: Framework para el servidor web.
+jsonwebtoken: Para crear y verificar tokens JWT.
+mongoose: ORM para MongoDB.
+morgan: Middleware de registro de solicitudes HTTP.
+zod: Librería para validación de esquemas
+
+npm install bcryptjs cookie-parser express jsonwebtoken mongoose morgan zod
+
+Dependencias de Desarrollo
+Nodemon: Para reiniciar automáticamente el servidor durante el desarrollo.
+npm install --save-dev nodemon
+
+Estructura del Directorio
+server/
+├── controllers/
+│   └── exampleController.js
+├── libs/
+│   └── utility.js
+├── middleware/
+│   └── authMiddleware.js
+├── models/
+│   └── exampleModel.js
+├── routes/
+│   └── exampleRoutes.js
+├── schemas/
+│   └── exampleSchema.js
+├── config/
+│   └── db.js
+│   └── index.js
+├── app.js
+├── server.js
+├── .env
+├── package.json
+└── nodemon.json
+
+Descripción de Archivos
+Backend
+controllers/: Contiene la lógica de negocio de la aplicación.
+exampleController.js: Define las funciones de los controladores para las rutas de la API.
+
+libs/: Contiene funciones de utilidad que se pueden usar en diferentes partes de la aplicación.
+utility.js: Ejemplo de archivo con funciones auxiliares.
+
+middleware/: Contiene middleware personalizado para la aplicación.
+authMiddleware.js: Middleware para autenticación y autorización de usuarios.
+
+models/: Define los modelos de Mongoose para interactuar con MongoDB.
+exampleModel.js: Define un esquema y modelo de Mongoose para una colección específica.
+
+routes/: Define las rutas de la API.
+exampleRoutes.js: Define las rutas de la API y los controladores asociados.
+
+schemas/: Contiene esquemas de validación de datos usando librerías como Joi.
+exampleSchema.js: Define un esquema de validación para los datos de entrada.
+
+config/: Archivos de configuración de la aplicación.
+
+db.js: Configuración de la conexión a la base de datos MongoDB.
+index.js: Configuración general de la aplicación.
+app.js: Archivo principal de la aplicación Express que configura middleware y rutas.
+
+server.js: Punto de entrada de la aplicación que inicia el servidor.
+
+.env: Archivo de configuración de entorno para variables sensibles (por ejemplo, URI de MongoDB).
+
+package.json: Archivo de configuración de NPM que incluye las dependencias del proyecto.
+
+nodemon.json: Configuración para nodemon que reinicia el servidor automáticamente durante el desarrollo.
+
+Frontend
+client/
+├── public/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   └── Home.js
+│   ├── pages/
+│   │   └── ExamplePage.js
+│   ├── services/
+│   │   └── apiService.js
+│   ├── App.js
+│   ├── index.js
+│   └── setupProxy.js
+├── .env
+├── package.json
+└── README.md
+
+Descripción de Archivos
+public/: Contiene archivos públicos que se sirven directamente.
+
+index.html: Archivo HTML principal para la aplicación React.
+src/: Contiene el código fuente de la aplicación React.
+
+components/: Componentes reutilizables de React.
+
+Home.js: Componente de ejemplo que muestra la página de inicio.
+pages/: Componentes de páginas específicas de la aplicación.
+
+ExamplePage.js: Componente de ejemplo para una página específica.
+services/: Servicios para interactuar con APIs.
+
+apiService.js: Contiene funciones para hacer peticiones HTTP a la API backend.
+App.js: Componente principal de React que define las rutas y estructura de la aplicación.
+
+index.js: Punto de entrada de la aplicación React.
+
+setupProxy.js: Archivo de configuración para proxy durante el desarrollo.
+
+.env: Archivo de configuración de entorno para variables sensibles (por ejemplo, URL de la API backend).
+
+package.json: Archivo de configuración de NPM que incluye las dependencias del proyecto.
+
+README.md: Archivo de documentación para el proyecto.
